@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质感方块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            /* vw 相当于视窗的宽度，视窗被均分为100单位的 vw */
+            width: 100vw;
+            /* vh 相当于视窗的高度，视窗被均分为100单位的 vh */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #acbaca;
+        }
+        
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: #c9d5e0;
+            border-radius: 50px;
+            /*
+                添加一层外阴影：向右和向下偏移各30px，30px的模糊半径，扩展半径-10 （值越大扩展延伸的范围越大，为负数则范围缩小），并添加阴影颜色
+                inset 添加一层内阴影：向右和向下偏移各15px，10px的模糊半径，并添加阴影颜色
+                添加一层外阴影：向左和向上偏移各15px，15px的模糊半径，扩展半径-35 （值越大扩展延伸的范围越大，为负数则范围缩小），并添加阴影颜色
+                insert 添加一层内阴影：向左和向上偏移各1px，10px的模糊半径，并添加阴影颜色
+            */
+            box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15), inset 15px 15px 10px rgba(255, 255, 255, 0.75), -15px -15px 35px rgba(255, 255, 255, 0.55), inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
